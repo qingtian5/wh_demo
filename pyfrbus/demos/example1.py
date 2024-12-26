@@ -1,15 +1,17 @@
 import pandas
+import sys
 
+sys.path.append("/workspace/wh_demo/pyfrbus")
 from pyfrbus.frbus import Frbus
 from pyfrbus.sim_lib import sim_plot
 from pyfrbus.load_data import load_data
 
 
 # Load data
-data = load_data("../data/LONGBASE.TXT")
+data = load_data("/workspace/wh_demo/pyfrbus/data/LONGBASE.TXT")
 
 # Load model
-frbus = Frbus("../models/model.xml")
+frbus = Frbus("/workspace/wh_demo/pyfrbus/models/model.xml")
 
 # Specify dates
 start = pandas.Period("2040Q1")
