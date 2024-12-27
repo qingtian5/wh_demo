@@ -11,7 +11,6 @@ setup(
         "flake8",
         "mypy",
         "typing_extensions",
-        "scikit-umfpack",
         "multiprocess",
         "sympy==1.3",
         "symengine",
