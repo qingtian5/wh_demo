@@ -1,7 +1,6 @@
 
 sudo apt-get -y update
-sudo apt-get -y install swig
-sudo apt-get -y install libsuitesparse-dev
+sudo apt-get -y install swig libsuitesparse-dev python3-dev build-essential
 
 cd /workspace/wh_demo/scikit-umfpack
 pip install -e .
